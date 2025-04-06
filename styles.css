@@ -1,0 +1,17 @@
+form
+{
+    width: auto;
+    height: 30%;
+    margin-top: 25%;
+    background-color: blueviolet;
+    border: 5px solid;
+    border-color: red;
+    justify-content: center;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+    }
+  }
+  
