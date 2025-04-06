@@ -26,7 +26,28 @@ if(isset($_POST['Borrar']))
     $_SESSION['resu2'] = 0;
 }
 
-
-
-
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form action="uno.php" method="post">
+        <p>Jugador n°1</p>
+        <input type="text" id="Num1" name="Num1" >
+        <p>Jugador n°2</p>
+    <input type="text" id="Num2" name="Num2"  >
+        <input type="submit" id="consultar" name="consultar" >
+        <button type="sudmit" id="Borrar" name="Borrar" placeholder="Borrar">Borrar</button>
+ <p>Resultado del n°1= <?php echo$_SESSION['resu1'] ?></p>
+ <p>Resultado del n°2= <?php echo $_SESSION['resu2'] ?></p>
+ </form>
+</body>
+</html>
+
+   
